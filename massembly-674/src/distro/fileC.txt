@@ -1,0 +1,8 @@
+This will be filtered but attempt to use escape String will fail. 
+This fails completely as you get both slashes and the variable is replaced
+
+C:\path\\${variable}
+
+Output should be (using <dollar> to indicate $)
+
+C:\path\<dollar>{variable}

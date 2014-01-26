@@ -1,0 +1,8 @@
+This will not be filtered
+
+C:\path\${variable}
+
+
+Output should be (using <dollar> to indicate $)
+
+C:\path\<dollar>{variable}

@@ -1,0 +1,7 @@
+This will be filtered (but the slash will cause the variable to not be replaced)
+
+C:\path\${variable}
+
+Output should be (using <dollar> to indicate $)
+
+C:\path<dollar>{variable}
