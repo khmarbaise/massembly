@@ -1,0 +1,7 @@
+<assembly>
+  <id>plugin</id>
+  <formats>
+    <format>jar</format>
+  </formats>
+  <baseDirectory></baseDirectory>
+</assembly>
