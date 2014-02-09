@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>root-aggregator</artifactId>
+		<groupId>com.linkare.roots</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>assembler</artifactId>
+	<packaging>pom</packaging>
+	<name>All projects assembler</name>
+	<description>Defines the assembly rules for root-aggregator and all other aggregators</description>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<dependencies>
+					<dependency>
+						<groupId>com.linkare.roots</groupId>
+						<artifactId>assembly-share</artifactId>
+						<version>0.0.1-SNAPSHOT</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<attach>true</attach>
+					<descriptorRefs>
+						<descriptorRef>modules-binaries-assembly</descriptorRef>
+					</descriptorRefs>
+					<formats>
+						<format>zip</format>
+					</formats>
+				</configuration>
+				<executions>
+					<execution>
+						<id></id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+						<inherited>true</inherited>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

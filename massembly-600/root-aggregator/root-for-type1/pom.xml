@@ -1,0 +1,31 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>root-aggregator</artifactId>
+		<groupId>com.linkare.roots</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<artifactId>root-for-type1</artifactId>
+	<packaging>pom</packaging>
+	<name>Root for Type1 Projects</name>
+	<description>A root for projects of type 1</description>
+	<profiles>
+		<profile>
+			<id>only-on-child-projects</id>
+			<activation>
+				<file>
+					<missing>root-pom.profile.marker</missing>
+				</file>
+			</activation>
+			<dependencies>
+				<dependency>
+					<groupId>junit</groupId>
+					<artifactId>junit</artifactId>
+					<version>4.10</version>
+					<scope>test</scope>
+				</dependency>
+			</dependencies>
+		</profile>
+	</profiles>
+</project>
