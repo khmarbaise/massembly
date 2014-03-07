@@ -1,0 +1,14 @@
+<project>
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>de.gsi.cs.co.maven.assembly_bug</groupId>
+    <artifactId>reactor</artifactId>
+    <version>1.0.0</version>
+  </parent>
+
+  <artifactId>one</artifactId>
+
+</project>
+
+
