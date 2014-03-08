@@ -28,6 +28,7 @@
 							<descriptor>${project.basedir}/src/assembly/assembly.xml</descriptor>
 						</descriptors>
 						<escapeString>!</escapeString>
+            <attach>false</attach>
 					</configuration>
 					<phase>package</phase>
 					<goals>
