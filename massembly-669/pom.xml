@@ -7,9 +7,9 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>three</module>
-    <module>two</module>
     <module>one</module>
+    <module>two</module>
+    <module>three</module>
   </modules>
 
 </project>

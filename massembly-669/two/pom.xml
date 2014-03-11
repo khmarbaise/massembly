@@ -8,12 +8,13 @@
   </parent>
 
   <artifactId>two</artifactId>
+  <version>1.0.2</version>
 
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>one</artifactId>
-      <version>[0,]</version>
+      <version>[0,)</version>
     </dependency>
   </dependencies>
 

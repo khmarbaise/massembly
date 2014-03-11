@@ -2,6 +2,7 @@
 	<id>foo</id>
 
 	<formats>
+		<format>jar</format>
 		<format>zip</format>
 	</formats>
 
@@ -9,7 +10,7 @@
 		<dependencySet>
 			<outputDirectory>/</outputDirectory>
 			<useProjectArtifact>false</useProjectArtifact>
-			<unpack>true</unpack>
+			<unpack>false</unpack>
 		</dependencySet>
 	</dependencySets>
 

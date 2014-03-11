@@ -8,15 +8,15 @@
   </parent>
 
   <artifactId>three</artifactId>
+  <version>1.0.3</version>
 
   <dependencies>
     <dependency>
       <groupId>${project.groupId}</groupId>
       <artifactId>two</artifactId>
-      <version>[0,]</version>
+      <version>[0,)</version>
     </dependency>
   </dependencies>
-
 
   <build>
     <plugins>
