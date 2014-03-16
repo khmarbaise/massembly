@@ -8,7 +8,7 @@
           <outputDirectory>lib</outputDirectory>
           <unpack>false</unpack>
           <excludes>
-            <exclude>${project.groupId}:*:*</exclude>
+            <exclude>${project.groupId}:*</exclude>
           </excludes>
       </dependencySet>
   </dependencySets>
