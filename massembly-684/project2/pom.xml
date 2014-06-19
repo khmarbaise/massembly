@@ -15,7 +15,6 @@
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
-				<version>2.4</version>
 				<!-- SORM's custom assembly descriptor is used to only produce the zip archive, not the tar.gz or tar.bz2.
 					It also only includes the resources necessary for DbMaintain, i.e. dbmaintain.properties and dbscripts,
 					not data_scripts, templates, assemblies, readme, etc. -->
