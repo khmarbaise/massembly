@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.pearson.sorm</groupId>
+		<artifactId>project</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.pearson.sorm</groupId>
+	<artifactId>project8</artifactId>
+
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>2.4</version>
+				<!-- SORM's custom assembly descriptor is used to only produce the zip archive, not the tar.gz or tar.bz2.
+					It also only includes the resources necessary for DbMaintain, i.e. dbmaintain.properties and dbscripts,
+					not data_scripts, templates, assemblies, readme, etc. -->
+				<configuration>
+					<descriptors>
+						<descriptor>src/assembly/src-zip-only-assembly.xml</descriptor>
+					</descriptors>
+				</configuration>
+				<executions>
+					<execution>
+						<id>make-assembly</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<dependencies>
+		<dependency>
+			<groupId>commons-logging</groupId>
+			<artifactId>commons-logging</artifactId>
+      <version>1.1.3</version>
+		</dependency>
+		<dependency>
+			<groupId>org.dbunit</groupId>
+			<artifactId>dbunit</artifactId>
+      <version>2.4.9</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>

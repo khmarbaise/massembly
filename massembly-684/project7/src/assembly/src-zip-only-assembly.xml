@@ -1,0 +1,22 @@
+<assembly xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.0 http://maven.apache.org/xsd/assembly-1.1.0.xsd">
+
+	<id>src</id>
+	<!-- only produce the zip archive, not tar.gz or tar.bz2 -->
+	<formats>
+		<format>zip</format>
+	</formats>
+	<!-- only include the files necessary for DbMaintain, not data_scripts, templates, assemblies, readme, etc. -->
+	<fileSets>
+		<fileSet>
+			<directory>${project.basedir}</directory>
+			<includes>
+				<include>pom.xml</include>
+				<include>src/main/resources/dbmaintain.properties</include>
+				<include>src/main/resources/dbscripts/**</include>
+			</includes>
+			<useDefaultExcludes>true</useDefaultExcludes>
+		</fileSet>
+	</fileSets>
+
+</assembly>
