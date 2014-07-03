@@ -2,6 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>smpp</artifactId>
+		<groupId>com.soebes.smpp</groupId>
+		<version>0.6.4</version>
+	</parent>
 
     <groupId>test</groupId>
     <artifactId>parent</artifactId>
@@ -22,7 +27,7 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>2.17</version>
                     <configuration>
-                        <forkMode>always</forkMode>
+                      <!--               <forkMode>always</forkMode> -->
                         <failIfNoTests>false</failIfNoTests>
                         <testFailureIgnore>true</testFailureIgnore>
                         <includes>
