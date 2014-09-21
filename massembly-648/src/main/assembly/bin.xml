@@ -12,10 +12,10 @@
 
   <fileSets>
     <fileSet>
-      <useDefaultExcludes>false</useDefaultExcludes>
+      <useDefaultExcludes>true</useDefaultExcludes>
       <directory>${project.build.directory}/work-tmp/deps</directory>
       <outputDirectory>/</outputDirectory>
-      <lineEnding>unix</lineEnding>
+      <lineEnding>unix</lineEnding> 
     </fileSet>
   </fileSets>
 </assembly>
