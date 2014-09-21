@@ -12,7 +12,7 @@
 
   <fileSets>
     <fileSet>
-      <useDefaultExcludes>true</useDefaultExcludes>
+      <useDefaultExcludes>false</useDefaultExcludes>
       <directory>${project.build.directory}/work-tmp/deps</directory>
       <outputDirectory>/</outputDirectory>
       <lineEnding>unix</lineEnding> 
