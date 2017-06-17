@@ -1,0 +1,12 @@
+target/
+├── archive-tmp
+└── assembly-0.0.1-SNAPSHOT-test
+    └── conf
+        ├── META-INF
+        │   └── maven
+        │       └── bug
+        │           └── assembly-dependency
+        │               └── pom.properties
+        └── myres.properties
+
+7 directories, 2 files

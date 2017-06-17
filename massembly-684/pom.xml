@@ -5,7 +5,7 @@
 	<parent>
 		<artifactId>smpp</artifactId>
 		<groupId>com.soebes.smpp</groupId>
-		<version>0.6.4</version>
+		<version>0.8.0</version>
 	</parent>
 
 	<groupId>com.pearson.sorm</groupId>
@@ -19,7 +19,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-assembly-plugin</artifactId>
-          <version>2.5-SNAPSHOT</version> 
+          <version>2.5.3</version> 
         </plugin>
       </plugins>
     </pluginManagement>

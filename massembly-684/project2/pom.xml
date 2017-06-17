@@ -18,11 +18,6 @@
 				<!-- SORM's custom assembly descriptor is used to only produce the zip archive, not the tar.gz or tar.bz2.
 					It also only includes the resources necessary for DbMaintain, i.e. dbmaintain.properties and dbscripts,
 					not data_scripts, templates, assemblies, readme, etc. -->
-				<configuration>
-					<descriptors>
-						<descriptor>src/assembly/src-zip-only-assembly.xml</descriptor>
-					</descriptors>
-				</configuration>
 				<executions>
 					<execution>
 						<id>make-assembly</id>
@@ -30,6 +25,23 @@
 						<goals>
 							<goal>single</goal>
 						</goals>
+            <configuration>
+              <descriptors>
+                <descriptor>src/assembly/src-zip-only-assembly.xml</descriptor>
+              </descriptors>
+    				</configuration>
+					</execution>
+					<execution>
+						<id>make-assembly-2</id>
+						<phase>package</phase>
+						<goals>
+							<goal>single</goal>
+						</goals>
+            <configuration>
+              <descriptors>
+                <descriptor>src/assembly/src-zip-only-assembly-1.xml</descriptor>
+              </descriptors>
+    				</configuration>
 					</execution>
 				</executions>
 			</plugin>

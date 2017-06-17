@@ -1,0 +1,33 @@
+target/
+├── archive-tmp
+│   └── fileSetFormatter.2056447043.tmp
+│       ├── META-INF
+│       │   └── maven
+│       │       └── bug
+│       │           └── assembly-dependency
+│       │               └── pom.properties
+│       ├── myres.properties
+│       ├── myres.properties.2057370211.filtered
+│       └── pom.properties.1747039326.filtered
+├── assembly
+│   └── work
+│       └── bug_assembly-dependency_0.0.1-SNAPSHOT.jar
+│           ├── META-INF
+│           │   ├── MANIFEST.MF
+│           │   └── maven
+│           │       └── bug
+│           │           └── assembly-dependency
+│           │               ├── pom.properties
+│           │               └── pom.xml
+│           └── myres.properties
+└── assembly-0.0.1-SNAPSHOT-test
+    └── conf
+        └── assembly-dependency-0.0.1-SNAPSHOT.jar
+            ├── META-INF
+            │   └── maven
+            │       └── bug
+            │           └── assembly-dependency
+            │               └── pom.properties
+            └── myres.properties
+
+20 directories, 10 files
