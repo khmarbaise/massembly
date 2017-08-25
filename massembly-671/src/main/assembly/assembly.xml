@@ -11,17 +11,9 @@
 
   <fileSets>
     <fileSet>
-      <!-- The missing traling $ is intentionally -->
-      <directory>{project.build.directory}/foo</directory>
+      <directory>src/main/assembly</directory>
       <outputDirectory>something</outputDirectory>
     </fileSet>
   </fileSets>
-  <dependencySets>
-    <dependencySet>
-          <useProjectArtifact>false</useProjectArtifact>
-          <useTransitiveDependencies>true</useTransitiveDependencies>
-          <unpack>false</unpack>
-      </dependencySet>
-  </dependencySets>
-	
+
 </assembly>
